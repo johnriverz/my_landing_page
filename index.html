@@ -12,6 +12,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" href="./images/favicon_io/favicon.ico">
+
+	<!--code snippet to use emailJS-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "xYZfqqY1B2wKHwb7c",
+			});
+		})();
+	</script>
+
+	<script src="script.js"></script>
 </head>
 
 <body class="is-preload">
@@ -20,7 +33,7 @@
 	<header id="header">
 		<div class="inner">
 			<a href="#" class="image avatar"><img src="./images/me.jpg" alt="" /></a>
-			<h1>Hello world, meet <strong>Juan Rios Jr.</strong></h1>
+			<h1>Hello world, I am <strong>Juan Rios Jr.</strong></h1>
 		</div>
 	</header>
 
@@ -90,30 +103,30 @@
 		<!-- Two -->
 		<section id="two">
 			<div class="container">
-				<h3>Things I Can Do</h3>
+				<h3>Things I'm good at</h3>
+				<ul class="feature-icons">
+					<li class="icon solid fa-code"> C, C#, Python, JavaScript, and HTML/CSS</li>
+					<li class="icon solid fa-cubes"> System design</li>
+					<li class="icon solid fa-book"> Read and write documentation</li>
+					<li class="icon solid fa-bolt"> Take the intitative</li>
+					<li class="icon solid fa-users"> Collabarate with users and peers</li>
+					<li class="icon solid fa-coffee"> Drink caffeine</li>
+				</ul>
 				<p>And don't forget to check out my
-					<a href="https://github.com/johnriverz" target="_blank" rel="noopener noreferrer"
-						class="button small">
+					<a href="https://github.com/johnriverz">
 						GitHub
 					</a>
 					to see some of these skills in action.
 				</p>
-				<ul class="feature-icons">
-					<li class="icon solid fa-code"> Write in C, C#, Python, JavaScript, and HTML/CSS</li>
-					<li class="icon solid fa-cubes"> System design</li>
-					<li class="icon solid fa-book"> Read and write documentation</li>
-					<li class="icon solid fa-coffee"> Drink coffee</li>
-					<li class="icon solid fa-bolt"> Take the intitative</li>
-					<li class="icon solid fa-users"> Collabarate with users and peers</li>
-				</ul>
 			</div>
 		</section>
 
 
 		<!-- Three -->
+		 <!--i used emailJS for my contact form and followed this video https://www.youtube.com/watch?v=BgVjild0C9A to get it set up-->
 		<section id="three">
-			<h2>Here's How You Can Get In Touch</h2>
-			<p>I check emails and messages every day.</p>
+			<h2>Here's how you can get in touch</h2>
+			<p>I check my emails and messages every day.</p>
 			<div class="row">
 				<div class="col-8 col-12-small">
 					<form method="post" action="#">
@@ -127,7 +140,7 @@
 						</div>
 					</form>
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
+						<li><input type="submit" onclick="sendMail()" value="Send Message" /></li>
 					</ul>
 				</div>
 				<div class="col-4 col-12-small">
@@ -476,10 +489,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/riosjuanjr/" target="_blank" rel="noopener noreferrer"
-						class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
-				<li><a href="https://github.com/johnriverz" target="_blank" rel="noopener noreferrer"
-						class="icon brands fa-github"><span class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/riosjuanjr/" class="icon brands fa-linkedin"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://github.com/johnriverz" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
 				<li><a href="mailto:juan.jose.rios.jr@gmail.com" target="_blank" rel="noopener noreferrer"
 						class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
