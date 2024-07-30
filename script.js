@@ -6,5 +6,5 @@ function sendMail() {
     }
 
     // send to emailJS server
-    emailjs.send("service_5n6lzws", "template_avejjvk", params).then(alert("Email has been sent"))
+    emailjs.send("service_5n6lzws", "template_avejjvk", params).then(confirm("Email has been sent"))
 }
